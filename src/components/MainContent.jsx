@@ -1,6 +1,4 @@
 import "../styles/MainContent.css";
-import Whatsapp from "../assets/whatsapp.png";
-import Mensagem from "../assets/mensagem.png";
 import Demanda from "../assets/demanda.png";
 import Text from "../assets/pctext.png";
 
@@ -22,15 +20,6 @@ function MainContent() {
             Criar Evento
           </div>
         </a>
-
-        <div className="elementos">
-          <img src={Mensagem} alt="Mensagem" />
-          Alterar Eventos
-        </div>
-        <div className="elementos">
-          <img src={Whatsapp} alt="whatsapp" />
-          Enviar Eventos
-        </div>
       </div>
       <button className="botao">COMUNICADO</button>
     </div >

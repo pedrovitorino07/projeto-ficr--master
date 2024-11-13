@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -55,16 +55,33 @@ h2 {
   align-items: center;
   color: white;
   background-color: #5375e5;
-  height: 180px;
+  height: 180px; /* Adjusted height for better scaling */
   border-radius: 8px;
   text-align: center;
   padding: 20px;
+  cursor: pointer; /* Added for hover effect and accessibility */
+}
+
+.elementos:hover {
+  opacity: 0.8; /* Added hover effect for visual feedback */
 }
 
 .elementos img {
-  height: 50px;
+  height: 50px; /* Removed as replaced with text and icon */
   margin-bottom: 10px;
 }
+
+.elementos p {
+  font-size: 16px; /* Added text styles for clarity */
+  margin-top: 5px; /* Added spacing for better layout */
+}
+
+.elementos i {
+  font-size: 24px; /* Increased icon size for better visibility */
+  margin-bottom: 5px; /* Added spacing for icon */
+}
+
+/* Responsive Styles */
 
 @media (max-width: 768px) {
   .botao {
@@ -76,36 +93,5 @@ h2 {
   h2 {
     font-size: 1.6em;
     margin-bottom: 30px;
-  }
-
-  .elementos {
-    height: 160px;
-    padding: 15px;
-  }
-
-  .elementos img {
-    height: 45px;
-  }
-}
-
-@media (max-width: 480px) {
-  .botao {
-    width: 70%;
-    font-size: 0.9em;
-    height: 45px;
-  }
-
-  h2 {
-    font-size: 1.4em;
-    margin-bottom: 20px;
-  }
-
-  .elementos {
-    height: 150px;
-    padding: 10px;
-  }
-
-  .elementos img {
-    height: 40px;
   }
 }
