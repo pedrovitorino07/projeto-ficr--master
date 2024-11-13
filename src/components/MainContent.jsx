@@ -5,7 +5,7 @@ import Text from "../assets/pctext.png";
 function MainContent() {
   return (
     <div className="Main">
-      <h2>Bem Vindo ao " "</h2>
+      <h2>Bem Vindo ao Communication</h2>
       <div className="carrossel">
         <a href="http://localhost:3000/listagemEvents">
           <div className="elementos">
