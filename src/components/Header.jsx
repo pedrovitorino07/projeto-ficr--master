@@ -7,7 +7,9 @@ function Header() {
     <div className="cabecalho">
       <img src={Megafone} alt="Logo" />
       <a href="http://localhost:3000"><h1>COMMUNICATION</h1></a>
-      <a href="http://localhost:3000/RegisterEvent"><button className="botao-cabecalho">Criar evento</button></a>
+      <Link to="/RegisterEvent">
+      <button className="botao-cabecalho">Criar evento</button>
+      </Link>
       <div>
         <Link to="/ListagemEvents">
           <button className="botao-cabecalho">Lista de eventos</button>

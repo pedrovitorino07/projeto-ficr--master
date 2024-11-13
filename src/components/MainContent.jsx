@@ -1,6 +1,7 @@
 import "../styles/MainContent.css";
 import Demanda from "../assets/demanda.png";
 import Text from "../assets/pctext.png";
+import { Link } from 'react-router-dom';
 
 function MainContent() {
   return (
@@ -21,7 +22,9 @@ function MainContent() {
           </div>
         </a>
       </div>
+      <Link to="/RegisterEvent">
       <button className="botao">COMUNICADO</button>
+      </Link>
     </div >
   );
 }
