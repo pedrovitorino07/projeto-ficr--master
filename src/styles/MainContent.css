@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 70%;
+}
+
+h2 {
+  margin: 5% 0 40px;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.botao {
+  color: white;
+  background-color: #5375e5;
+  height: 100px;
+  width: 200px;
+  border-radius: 8px;
+  margin: 30px 0;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+}
+
+.carrossel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.elementos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #5375e5;
+  height: 180px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+}
+
+.elementos img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .botao {
+    width: 60%;
+    max-width: 200px;
+    height: 50px;
+  }
+
+  h2 {
+    font-size: 1.6em;
+    margin-bottom: 30px;
+  }
+
+  .elementos {
+    height: 160px;
+    padding: 15px;
+  }
+
+  .elementos img {
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .botao {
+    width: 70%;
+    font-size: 0.9em;
+    height: 45px;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+  }
+
+  .elementos {
+    height: 150px;
+    padding: 10px;
+  }
+
+  .elementos img {
+    height: 40px;
+  }
+}
