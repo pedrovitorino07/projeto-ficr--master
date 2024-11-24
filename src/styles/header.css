@@ -1,12 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 .cabecalho {
   background-color: #5375e5;
-  height: 100px;
   display: flex;
   align-items: center;
   padding: 0 20px;
-  justify-content: space-between;
+  justify-content: space-between; 
+}
+
+.cabecalho-esquerda { 
+  display: flex;
+  align-items: center;
+  gap: 10px; 
 }
 
 .cabecalho img {
@@ -15,7 +18,7 @@
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5em;
   color: white;
   margin-top: 15px;
@@ -37,10 +40,11 @@ h1 {
 
 @media (max-width: 768px) {
   .cabecalho {
-    flex-direction: column;
+    flex-direction: column; 
     height: auto;
     padding: 10px 20px;
     gap: 10px;
+    justify-content: center; 
   }
 
   .cabecalho img {
@@ -54,7 +58,7 @@ h1 {
   }
 
   .botao-cabecalho {
-    width: 100%; 
+    width: 100%;
     text-align: center;
     padding: 8px 0;
   }

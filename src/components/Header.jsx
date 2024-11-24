@@ -1,16 +1,21 @@
 import "../styles/header.css";
 import Megafone from "../assets/megafone.png";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="cabecalho">
-      <img src={Megafone} alt="Logo" />
-      <a href="http://localhost:3000"><h1>COMMUNICATION</h1></a>
-      <Link to="/RegisterEvent">
-      <button className="botao-cabecalho">Criar evento</button>
-      </Link>
-      <div>
+      <div className="cabecalho-esquerda">
+        <img src={Megafone} alt="Logo" />
+        <Link to="/">
+          <h1>COMMUNICATION</h1>
+        </Link>
+      </div>
+      <div className="header-button">
+        <Link to="/RegisterEvent">
+          <button className="botao-cabecalho">Criar evento</button>
+        </Link>
+        <button className="botao-cabecalho">Add número</button>
         <Link to="/ListagemEvents">
           <button className="botao-cabecalho">Lista de eventos</button>
         </Link>

@@ -36,7 +36,12 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8%;
+  margin-top: 25%;
+  cursor: pointer;
+}
+
+.botao:hover {
+  opacity: 0.8; /* Added hover effect for visual feedback */
 }
 
 .carrossel {
@@ -60,10 +65,6 @@ h2 {
   text-align: center;
   padding: 20px;
   cursor: pointer; /* Added for hover effect and accessibility */
-}
-
-.elementos:hover {
-  opacity: 0.8; /* Added hover effect for visual feedback */
 }
 
 .elementos img {
