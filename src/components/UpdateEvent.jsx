@@ -96,7 +96,7 @@ function UpdateEvent() {
             required
           />
         </label>
-        <button type="submit" className="botao-form">Salvar evento</button>
+        <button type="submit" className="botao-form">Atualizar evento</button>
       </form>
     </div>
   );

@@ -15,7 +15,12 @@ function Header() {
         <Link to="/RegisterEvent">
           <button className="botao-cabecalho">Criar evento</button>
         </Link>
+        <Link to="/RegisterNumber">
         <button className="botao-cabecalho">Add número</button>
+        </Link>
+        <Link to="/ListNumber">
+        <button className="botao-cabecalho">Lista de números</button>
+        </Link>
         <Link to="/ListagemEvents">
           <button className="botao-cabecalho">Lista de eventos</button>
         </Link>

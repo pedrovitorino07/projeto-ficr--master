@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
-// import '../styles/App.css';
 import { apiService } from '../services/apiService';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import MainContent from "../components/MainContent";
+import UpdateNumber from '../components/UpdateNumber';
 
-function App() {
+function AttNumber() {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -45,10 +44,10 @@ function App() {
         </ul>
       )} */}
       <Header />
-      <MainContent />
+      <UpdateNumber />
       <Footer />
     </div>
   );
 }
 
-export default App;
+export default AttNumber;

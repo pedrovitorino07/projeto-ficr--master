@@ -1,9 +1,16 @@
 import "../styles/AddNumber.css";
 import React, { useState } from "react";
 
-function AddNumber() {
+function UpdateNumber() {
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+
+  const handleDelete = async () => {
+    // Simulação de exclusão do servidor (substitua por sua lógica real)
+    console.log("Número de telefone deletado com sucesso!");
+    setName("");
+    setPhoneNumber("");
+  };
 
   const handleInputChange = (event) => {
     const { value } = event.target;
@@ -55,7 +62,7 @@ function AddNumber() {
   return (
     <div className="AddNumber">
       <form onSubmit={handleSubmit}>
-      <h1>Cadastro de número</h1>
+        <h1>Atualização de número</h1>
         <label>
           Nome:
           <input
@@ -76,12 +83,19 @@ function AddNumber() {
             placeholder="(XX) XXXXX-XXXX"
           />
         </label>
+        <button
+          type="button"
+          className="botao-form-delete"
+          onClick={handleDelete}
+        >
+          Deletar número de telefone
+        </button>
         <button type="submit" className="botao-form">
-          Cadastrar Membro
+          Atualizar número de telefone
         </button>
       </form>
     </div>
   );
 }
 
-export default AddNumber;
+export default UpdateNumber;

@@ -44,7 +44,7 @@ function CreateEvent() {
   return (
     <div className="Register">
       <form onSubmit={handleCreate}>
-        <h1>Crie seu evento</h1>
+        <h2>Crie seu evento</h2>
         <label>
           Título:
           <input
