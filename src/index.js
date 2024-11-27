@@ -7,6 +7,8 @@ import RegisterEvent from './pages/RegisterEvents';
 import { ListagemEventos } from './pages/listagemEvents';
 import UpdateEvents from './pages/updateEvents';
 import EventDetailsPage from './pages/EventDetails';
+import NumberList from './pages/ListNumber'; 
+import RegisterNumber from './pages/RegisterNumber';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,8 +18,10 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/registerEvent" element={<RegisterEvent />} />
         <Route path="/listagemEvents" element={<ListagemEventos />} />
-        <Route path="/update-event" element={<UpdateEvents />} />
         <Route path="/eventDetails" element={<EventDetailsPage />} />
+        <Route path="/update-event" element={<UpdateEvents />} />
+        <Route path="/listagemNumeros" element={<NumberList />} />
+        <Route path="/numeroRegister" element={<RegisterNumber />} />
       </Routes>
     </Router>
   </React.StrictMode>
